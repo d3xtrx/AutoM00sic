@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from os import listdir
 from ast import literal_eval
+#add spotdl 
 
 music_dir = "debug"
 
