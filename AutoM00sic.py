@@ -11,7 +11,7 @@ def qna(dir_list, artist_dict):
 			print("do u want to automate", dirs, "? Type y/n/s(kip for now)") 
 			care = input('> ')                                 
 			if str.lower(care) == 'y':			   
-				print('enter soundcloud / spotify artist track page url')
+				print('enter soundcloud artist track page url')
 				url = input('> ')
 				artist_dict[dirs]=url 
 			elif str.lower(care) == 'n':
