@@ -3,7 +3,7 @@ from os import listdir
 from subprocess import Popen
 from ast import literal_eval
 
-music_dir = "debug"
+music_dir = ""
 
 def qna(dir_list, artist_dict):
 	for dirs in dir_list: 
@@ -25,7 +25,6 @@ def download(artist_dict):
 	for key in artist_dict.keys():
 		if not artist_dict.get(key) == "ignore":
 			arraystuff = artist_dict.get(key).split("/")
-			print(arraystuff)
 			if arraystuff[2] == "soundcloud.com":
 				Popen(["youtube-dl", artist_dict.get(key)], cwd= music_dir + '/' + key)
 			else: 
