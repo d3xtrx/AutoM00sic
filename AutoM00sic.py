@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from os import listdir
+from subprocess import Popen
 from ast import literal_eval
-#add spotdl 
 
 music_dir = "debug"
 
@@ -23,9 +23,13 @@ def qna(dir_list, artist_dict):
 
 def download(artist_dict):
 	for key in artist_dict.keys():
-		print(artist_dict.get(key))
 		if not artist_dict.get(key) == "ignore":
-			print(artist_dict.get(key), "not ignored")
+			arraystuff = artist_dict.get(key).split("/")
+			print(arraystuff)
+			if arraystuff[2] == "soundcloud.com":
+				Popen(["youtube-dl", artist_dict.get(key)], cwd= music_dir + '/' + key)
+			else: 
+				print("im lazy sorry. just use soundcloud")
 
 def main():		
 	dir_list = listdir(music_dir)
