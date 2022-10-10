@@ -33,7 +33,7 @@ def download(artist_dict):
 def main():		
 	dir_list = listdir(music_dir)
 	with open("artist_list.dat", 'r') as artist_dict_fh:
-		artist_dict_str = artist_dict_fh.read().lower()
+		artist_dict_str = artist_dict_fh.read()
 		artist_dict_fh.close()
 	if len(artist_dict_str) > 0:
 		artist_dict = literal_eval(artist_dict_str)
