@@ -6,7 +6,7 @@
 
 written with python3.10.2 
 
-run: 
+to install dependencies run: 
 
 `pip install youtube-dl`
 
