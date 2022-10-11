@@ -7,6 +7,7 @@
 written with python3.10.2 
 
 run: 
+
 `pip install youtube-dl`
 
 IMPORTANT: change music_dir variable in script to the absolute path of ur library!!
@@ -17,9 +18,11 @@ just run the script
 
 and fill out first time prompt. dont worry if u make a typo, u can just change the website value in the dat file.  
 
-## If you want to maintain this project: 
+ideally you should use a url like: `https://soundcloud.com/juanista/tracks`
 
-# TODO:
+# If you want to maintain this project: 
+
+## TODO:
 
 GUI 
 
