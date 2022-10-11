@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from os import listdir
-from subprocess import Popen
+from os import listdir, getcwd, chdir
 from ast import literal_eval
+import youtube_dl
 
-music_dir = ""
+music_dir = "fill_me_out"
+ydl_opts = {'download_archive': 'download_archive'}
 
 def qna(dir_list, artist_dict):
 	for dirs in dir_list: 
@@ -22,11 +23,15 @@ def qna(dir_list, artist_dict):
 	return artist_dict
 
 def download(artist_dict):
+	startpath = getcwd()
 	for key in artist_dict.keys():
 		if not artist_dict.get(key) == "ignore":
 			arraystuff = artist_dict.get(key).split("/")
 			if arraystuff[2] == "soundcloud.com":
-				Popen(["youtube-dl", artist_dict.get(key)], cwd= music_dir + '/' + key)
+				chdir(music_dir + '/' + key)
+				with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+					ydl.download([artist_dict.get(key)])
+				chdir(startpath)
 			else: 
 				print("im lazy sorry. just use soundcloud")
 

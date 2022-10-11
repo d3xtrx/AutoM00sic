@@ -4,11 +4,21 @@
 
 # how 2 use:
 
+written with python3.10.2 
+
+run: 
+`pip install youtube-dl`
+
 IMPORTANT: change music_dir variable in script to the absolute path of ur library!!
 
-just run script and fill out first time prompt. dont worry if u make a typo, u can just change the website value in the dat file.  
+just run the script
 
-##If you want to maintain this project: 
+`python3 /path/to/AutoM00sic.py`
+
+and fill out first time prompt. dont worry if u make a typo, u can just change the website value in the dat file.  
+
+## If you want to maintain this project: 
+
 # TODO:
 
 GUI 
@@ -16,8 +26,6 @@ GUI
 sites other than soundcloud lol
 
 Add support for multiple websites per artist
-
-Use 'smarter' content downloading ie no duplicates.
 
 Recursive directory(album)  sorting/reading.  
 
