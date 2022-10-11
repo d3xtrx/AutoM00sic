@@ -3,7 +3,7 @@ from os import listdir, getcwd, chdir
 from ast import literal_eval
 import youtube_dl
 
-music_dir = "fill_me_out"
+music_dir = ""
 ydl_opts = {'download_archive': 'download_archive'}
 
 def qna(dir_list, artist_dict):
@@ -27,7 +27,7 @@ def download(artist_dict):
 	for key in artist_dict.keys():
 		if not artist_dict.get(key) == "ignore":
 			arraystuff = artist_dict.get(key).split("/")
-			if arraystuff[2] == "soundcloud.com":
+			if "soundcloud.com" in arraystuff:
 				chdir(music_dir + '/' + key)
 				with youtube_dl.YoutubeDL(ydl_opts) as ydl:
 					ydl.download([artist_dict.get(key)])
