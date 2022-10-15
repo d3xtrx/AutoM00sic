@@ -19,18 +19,3 @@ just run the script
 and fill out first time prompt. dont worry if u make a typo, u can just change the website value in the dat file.  
 
 ideally you should use a url like: `https://soundcloud.com/juanista/tracks`
-
-# If you want to maintain this project: 
-
-## TODO:
-
-GUI 
-
-sites other than soundcloud lol
-
-Add support for multiple websites per artist
-
-Recursive directory(album)  sorting/reading.  
-
-(ambitious)Soulseek intergration?
-
