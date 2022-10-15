@@ -1,5 +1,3 @@
-# AutoM00sic is (read: could've been) a gr8 way to automatically check for new uploads by artists and download them. uses youtube-dl and only really works with soundcloud cus thats what i used it for lol
-
 ![milked](https://cdn.discordapp.com/attachments/310843140976148482/900958098531946506/milked.png)
 
 ## how 2 use:
