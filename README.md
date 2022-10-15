@@ -14,6 +14,4 @@ just run the script
 
 `python3 /path/to/AutoM00sic.py`
 
-and fill out first time prompt. dont worry if u make a typo, u can just change the website value in the dat file.  
-
 ideally you should use a url like: `https://soundcloud.com/juanista/tracks`
